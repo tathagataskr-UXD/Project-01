@@ -1,0 +1,126 @@
+# ============================================================
+#  .gitignore — Project-1 Design System
+# ============================================================
+
+# ---------------------------
+# Node.js / npm / yarn / pnpm
+# ---------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnp/
+.pnp.js
+package-lock.json   # remove this line if you want to commit the lock file
+# yarn.lock         # uncomment if using yarn and you don't want to commit it
+
+# ---------------------------
+# Build & Dist Outputs
+# ---------------------------
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+*.tsbuildinfo
+
+# Design Token build outputs
+packages/tokens/dist/
+packages/tokens/build/
+packages/tokens/visualization/dist/
+packages/*/dist/
+packages/*/build/
+
+# ---------------------------
+# Environment & Secrets
+# ---------------------------
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+
+# ---------------------------
+# IDE & Editor
+# ---------------------------
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.code-workspace
+
+# ---------------------------
+# OS Generated Files
+# ---------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ---------------------------
+# Logs & Temp Files
+# ---------------------------
+logs/
+*.log
+*.tmp
+*.temp
+.temp/
+.tmp/
+
+# ---------------------------
+# Testing & Coverage
+# ---------------------------
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+playwright-report/
+.playwright/
+
+# ---------------------------
+# TypeScript
+# ---------------------------
+*.js.map
+*.d.ts.map
+
+# ---------------------------
+# Monorepo / Workspaces
+# ---------------------------
+.turbo/
+.nx/cache/
+.nx/workspace-data/
+
+# ---------------------------
+# Miscellaneous
+# ---------------------------
+*.zip
+*.tar.gz
+*.rar
+*.7z
